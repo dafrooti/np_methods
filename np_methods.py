@@ -48,11 +48,27 @@ import numpy as np
 
 # print(array6)
 
-array7 = np.array([5, 64, 4, 91, 77, 37])
-array8 = array7.reshape(3, 2)
+# array7 = np.array([5, 64, 4, 91, 77, 37])
+# array8 = array7.reshape(3, 2)
 
-print(array8)
-print(array7[3])
-print(array7[2:4])
-print(array8[0:2, 0])
-print(array7[[0,5]])
+# print(array8)
+# print(array7[3])
+# print(array7[2:4])
+# print(array8[0:2, 0])
+# print(array7[[0,5]])
+
+array9 = np.random.randint(1, 100, 16).reshape(4, 4)
+array10 = np.random.randint(1, 50, 16).reshape(4, 4)
+
+print(array9)
+# print(array10)
+# print(array9-array10)
+
+def solve(x):
+    return 5*x + 3
+
+y = solve(array9)
+# print(y)
+
+array11 = array9[array9 > 15]
+print(array11)
